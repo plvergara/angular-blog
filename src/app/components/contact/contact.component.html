@@ -1,6 +1,8 @@
-<app-slider [title]="title" [size]="size"></app-slider>
+<app-slider [title]="this.title" [size]="this.size"></app-slider>
 <div class="center">
-  <section id="content"></section>
+  <section id="content">
+    <app-form></app-form>
+  </section>
   <app-sidebar></app-sidebar>
   <div class="clearfix"></div>
 </div>
