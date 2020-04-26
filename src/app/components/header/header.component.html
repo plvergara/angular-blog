@@ -10,18 +10,36 @@
     <nav id="menu">
       <ul>
         <li>
-          <a [routerLink]="['/']" [routerLinkActive]="['active']">Home</a>
+          <a
+            [routerLink]="['/']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
         </li>
         <li>
-          <a [routerLink]="['/blog']" [routerLinkActive]="['active']">Blog</a>
+          <a
+            [routerLink]="['/blog']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Blog</a
+          >
         </li>
         <li>
-          <a [routerLink]="['/contact']" [routerLinkActive]="['active']">
+          <a
+            [routerLink]="['/contact']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             Contact
           </a>
         </li>
         <li>
-          <a [routerLink]="['/test-page']" [routerLinkActive]="['active']">
+          <a
+            [routerLink]="['/test-page']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             Test Page
           </a>
         </li>

@@ -29,7 +29,9 @@ body {
 .w-75 {
   width: 75%;
 }
-
+.red {
+  color: rgba(195, 0, 47, 1);
+}
 .clearfix {
   clear: both;
   float: none;
@@ -301,6 +303,23 @@ textarea {
 .article-item.article-detail .image-wrap img {
   width: 100%;
   height: auto;
+}
+
+.error-404 {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../images/404.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 2rem 1rem 0rem 1rem;
+  height: 25rem;
+  width: auto;
+}
+.error-404 h2 {
+  opacity: 1;
 }
 
 /*Responsive*/

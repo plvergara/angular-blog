@@ -13,6 +13,7 @@ import { FormComponent } from './components/form/form.component';
 import { PageComponent } from './components/page/page.component';
 import { ArticleComponent } from './components/article/article.component';
 import { ErrorComponent } from './components/error/error.component';
+import { ArticleItemComponent } from './components/article-item/article-item.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ErrorComponent } from './components/error/error.component';
     PageComponent,
     ArticleComponent,
     ErrorComponent,
+    ArticleItemComponent,
   ],
   imports: [BrowserModule, routing],
   providers: [appRoutingProviders],
