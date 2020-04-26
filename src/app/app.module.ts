@@ -14,6 +14,7 @@ import { PageComponent } from './components/page/page.component';
 import { ArticleComponent } from './components/article/article.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ArticleItemComponent } from './components/article-item/article-item.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ArticleItemComponent } from './components/article-item/article-item.com
     ArticleComponent,
     ErrorComponent,
     ArticleItemComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, routing],
   providers: [appRoutingProviders],

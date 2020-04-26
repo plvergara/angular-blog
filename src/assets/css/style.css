@@ -166,6 +166,7 @@ body {
 }
 
 #slider.small-slider {
+  text-transform: capitalize;
   height: 150px;
 }
 

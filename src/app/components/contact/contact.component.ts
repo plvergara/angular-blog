@@ -1,17 +1,18 @@
 import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-page',
-  templateUrl: './page.component.html',
-  styleUrls: ['./page.component.css'],
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css'],
 })
-export class PageComponent implements OnInit {
+export class ContactComponent implements OnInit {
   public title: string;
   public size: string;
 
   constructor() {
-    this.title = 'Test Page';
+    this.title = 'contact';
     this.size = 'small-slider';
   }
+
   ngOnInit(): void {}
 }

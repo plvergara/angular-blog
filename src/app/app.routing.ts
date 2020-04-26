@@ -5,13 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
-import { FormComponent } from './components/form/form.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { PageComponent } from './components/page/page.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'contact', component: FormComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'test-page', component: PageComponent },
   { path: 'blog/:title', component: ArticleComponent },
   { path: '**', component: ErrorComponent },

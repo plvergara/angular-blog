@@ -1,4 +1,10 @@
-<div id="slider" class="big-slider">
-  <h1>Welcome to Angular Course</h1>
-  <a [routerLink]="['/blog']" class="btn btn-info center">blog</a>
+<div id="slider" [ngClass]="size">
+  <h1>{{ title }}</h1>
+
+  <a
+    [routerLink]="['/blog']"
+    class="btn btn-info center"
+    *ngIf="size === 'big-slider'"
+    >blog</a
+  >
 </div>

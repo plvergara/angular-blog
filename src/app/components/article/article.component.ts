@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 
 @Component({
@@ -8,7 +8,11 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 })
 export class ArticleComponent implements OnInit {
   public title: string;
-  constructor(private _route: ActivatedRoute, private _router: Router) {}
+  public size: string;
+
+  constructor(private _route: ActivatedRoute, private _router: Router) {
+    this.size = 'big-slider';
+  }
 
   ngOnInit(): void {
     this._route.params.subscribe((params: Params) => {
