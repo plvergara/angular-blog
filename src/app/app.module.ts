@@ -2,7 +2,7 @@ import { routing, appRoutingProviders } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SliderComponent } from './components/slider/slider.component';
@@ -33,7 +33,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ArticleItemComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, routing, FormsModule],
+  imports: [BrowserModule, routing, FormsModule, HttpClientModule],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent],
 })
