@@ -22,7 +22,7 @@
     <span class="user">
       {{ article.user.userName }}
     </span>
-    <a [routerLink]="['/blog', formatUrl(article.title)]">read more</a>
+    <a [routerLink]="['/blog', article.id]">read more</a>
     <div class="clearfix"></div>
   </article>
 </div>

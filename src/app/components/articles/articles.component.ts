@@ -15,9 +15,9 @@ export class ArticlesComponent implements OnInit {
     this.url = Global.url;
   }
 
-  formatUrl(url) {
-    return url.replace(/ /g, '_').replace('.', '').toLowerCase();
-  }
+  // formatUrl(url) {
+  //   return url.replace(/ /g, '_').replace('.', '').toLowerCase();
+  // }
 
   ngOnInit(): void {}
 }

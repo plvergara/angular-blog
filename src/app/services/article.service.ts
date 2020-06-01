@@ -17,4 +17,8 @@ export class ArticleService {
     }
     return this._http.get(this.url + articles);
   }
+
+  getArticle(articleId: string): Observable<any> {
+    return this._http.get(this.url + 'blog/' + articleId);
+  }
 }

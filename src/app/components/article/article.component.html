@@ -1,6 +1,21 @@
-<app-slider [title]="title" [size]="size"></app-slider>
-<div class="center">
-  <section id="content"></section>
+<app-slider [title]="article.title" [size]="size"></app-slider>
+<div class="center w-75">
+  <section id="content">
+    <article class="article-item article-detail">
+      <div class="image-wrap">
+        <img src="{{ article.image }}" alt="{{ article.title }}" />
+      </div>
+      <h1>{{ article.title }}</h1>
+      <span class="user">
+        {{ article.user.userName }}
+      </span>
+      <span class="date">
+        {{ article.date | amLocale: "eng" | amTimeAgo }}
+      </span>
+      {{ article.body }}
+      <div class="clearfix"></div>
+    </article>
+  </section>
   <app-sidebar></app-sidebar>
   <div class="clearfix"></div>
 </div>
