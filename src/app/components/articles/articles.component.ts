@@ -10,8 +10,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ArticlesComponent implements OnInit {
   @Input() articles: Article[];
   public url: string;
+  public url_article: string;
   constructor() {
     this.url = Global.url;
+  }
+
+  formatUrl(url) {
+    return url.replace(/ /g, '_').replace('.', '').toLowerCase();
   }
 
   ngOnInit(): void {}

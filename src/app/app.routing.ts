@@ -13,7 +13,7 @@ const appRoutes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'test-page', component: PageComponent },
-  { path: 'blog/:title', component: ArticleComponent },
+  { path: 'blog/:id', component: ArticleComponent },
   { path: '**', component: ErrorComponent },
 ];
 

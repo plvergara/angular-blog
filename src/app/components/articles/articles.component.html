@@ -1,4 +1,7 @@
-<div id="articles">
+<div class="loading" *ngIf="!articles">
+  <p>Loading...</p>
+</div>
+<div id="articles" *ngIf="articles">
   <article class="article-item" *ngFor="let article of articles">
     <div class="image-wrap">
       <img
@@ -14,9 +17,12 @@
     </div>
     <h2>{{ article.title }}</h2>
     <span class="date">
-      {{ article.date }}
+      {{ article.date | amLocale: "eng" | amTimeAgo }}
     </span>
-    <a href="article.html">read more</a>
+    <span class="user">
+      {{ article.user.userName }}
+    </span>
+    <a [routerLink]="['/blog', formatUrl(article.title)]">read more</a>
     <div class="clearfix"></div>
   </article>
 </div>

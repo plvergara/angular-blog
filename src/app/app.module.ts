@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MomentModule } from 'angular2-moment';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SliderComponent } from './components/slider/slider.component';
@@ -35,7 +36,13 @@ import { ArticlesComponent } from './components/articles/articles.component';
     ContactComponent,
     ArticlesComponent,
   ],
-  imports: [BrowserModule, routing, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    routing,
+    FormsModule,
+    HttpClientModule,
+    MomentModule,
+  ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent],
 })
