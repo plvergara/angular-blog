@@ -1,3 +1,5 @@
+import { Global } from './../../services/global';
+import { Article } from './../../models/article';
 import { Component, OnInit, Output } from '@angular/core';
 import { ArticleService } from '../../services/article.service';
 
@@ -8,18 +10,24 @@ import { ArticleService } from '../../services/article.service';
   providers: [ArticleService],
 })
 export class BlogComponent implements OnInit {
+  public articles: Article[];
+  public url: string;
   public title: string;
   public size: string;
-  private _articleService: ArticleService;
-  constructor() {
+
+  constructor(private _articleService: ArticleService) {
     this.title = 'blog';
     this.size = 'small-slider';
+    this.url = Global.url;
   }
 
   ngOnInit() {
     this._articleService.getArticles().subscribe(
       (response) => {
-        console.log(response);
+        if (response) {
+          this.articles = response;
+        } else {
+        }
       },
       (error) => {
         console.log(error);

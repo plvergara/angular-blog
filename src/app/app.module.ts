@@ -16,6 +16,7 @@ import { ArticleComponent } from './components/article/article.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ArticleItemComponent } from './components/article-item/article-item.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ArticlesComponent } from './components/articles/articles.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ErrorComponent,
     ArticleItemComponent,
     ContactComponent,
+    ArticlesComponent,
   ],
   imports: [BrowserModule, routing, FormsModule, HttpClientModule],
   providers: [appRoutingProviders],
