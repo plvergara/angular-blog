@@ -1,4 +1,3 @@
-<app-slider [title]="article.title" [size]="size"></app-slider>
 <div class="center w-75">
   <section id="content">
     <article class="article-item article-detail">
@@ -15,6 +14,10 @@
       {{ article.body }}
       <div class="clearfix"></div>
     </article>
+    <div class="btn-group d-flex mt-3" *ngIf="isLoggin">
+      <a class="btn btn-outline-primary m-2">Edit</a>
+      <a class="btn btn-outline-danger m-2">Delete</a>
+    </div>
   </section>
   <app-sidebar></app-sidebar>
   <div class="clearfix"></div>

@@ -18,6 +18,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { ArticleItemComponent } from './components/article-item/article-item.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ArticlesComponent } from './components/articles/articles.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ArticlesComponent } from './components/articles/articles.component';
     ArticleItemComponent,
     ContactComponent,
     ArticlesComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
